@@ -6,9 +6,9 @@
 This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
 
 
-<h2>Video Demonstration</h2>
+<h2>Video Demonstration ( NOT READY YET)</h2>
 
-- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
+- ### [YouTube: osTicket instalation](.)
 
 <h2>Environments and Technologies Used</h2>
 
@@ -86,7 +86,7 @@ Launch IIS Manager as Administrator (windows key and type IIS). In PHP Manager, 
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Navigate to the folder C:\inetpub\wwwroot\osTicket\include and rename ost-sampleconfig.php to ost-config.php. Right-click the file, go to Properties > Security, disable inheritance, remove all existing permissions, and add new full control permissions for Everyone. Go back to the osTicket browser setup page, enter your Helpdesk name and default support email address to continue.
+Navigate to the folder C:\inetpub\wwwroot\osTicket\include and rename ost-sampleconfig.php to ost-config.php. Right-click the file, go to Properties > Security, disable inheritance, remove all existing permissions, and add new full control permissions for Everyone. Go back to the osTicket browser setup page, enter with a Helpdesk name and default support email address (made up) to continue.
 </p>
 <br />
 
@@ -96,6 +96,6 @@ Navigate to the folder C:\inetpub\wwwroot\osTicket\include and rename ost-sample
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Install HeidiSQL from the installation files. Launch HeidiSQL, create a new session using the username root and password root, and connect. Create a new database called osTicket. Return to the osTicket setup page in the browser, enter the database name osTicket, username root, and password root, then click “Install Now!” Once the installation is complete, access the admin login page at http://localhost/osTicket/scp/login.php and the end-user portal at http://localhost/osTicket/. Finally, delete the C:\inetpub\wwwroot\osTicket\setup folder and set the ost-config.php file to read-only.
 </p>
 <br />
