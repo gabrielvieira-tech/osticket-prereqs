@@ -46,9 +46,7 @@ Begin by creating a Windows 10 virtual machine in Azure with 4/2 vCPUs. Name the
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Inside the VM, download ### [the osTicket-Installation-Files.zip](https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD)the osTicket-Installation-Files.zip file and extract it to the Desktop. This will create a folder called osTicket-Installation-Files, which contains all the necessary files for installing osTicket and its dependencies.
-
-
+Inside the VM, download <a href="https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD">the osTicket-Installation-Files.zip file</a> and extract it to the Desktop. This will create a folder called osTicket-Installation-Files, which contains all the necessary files for installing osTicket and its dependencies.
 </p>
 <br />
 
@@ -58,7 +56,7 @@ Inside the VM, download ### [the osTicket-Installation-Files.zip](https://drive.
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Open the “Turn Windows features on or off” menu from the Control Panel. Enable Internet Information Services (IIS) and make sure to check CGI under World Wide Web Services > Application Development Features. This prepares the server for hosting the osTicket web application.
 </p>
 <br />
 
@@ -68,7 +66,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+From the osTicket-Installation-Files folder, install PHP Manager for IIS and the Rewrite Module. Also install the VC++ Redistributable. Create the folder C:\PHP, then extract php-7.3.8-nts-Win32-VC15-x86.zip into it. Install MySQL 5.5.62 using the Typical Setup, then run the Configuration Wizard using Standard Configuration. Set the MySQL root username and password both to root.
 </p>
 <br />
 
@@ -78,7 +76,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Launch IIS Manager as Administrator (windows key and type IIS). In PHP Manager, register the PHP executable located at C:\PHP\php-cgi.exe. Stop and start the IIS server to apply the changes. Extract the osTicket-v1.15.8.zip file and copy the upload folder into C:\inetpub\wwwroot, renaming it to osTicket. Restart IIS again. In IIS Manager, navigate to the Default Web Site (over the left side), select osTicket and double click PHP Manager, enable the following PHP extensions: php_imap.dll, php_intl.dll, and php_opcache.dll. Then click “Browse *:80” to open the site.
 </p>
 <br />
 
@@ -88,7 +86,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Navigate to the folder C:\inetpub\wwwroot\osTicket\include and rename ost-sampleconfig.php to ost-config.php. Right-click the file, go to Properties > Security, disable inheritance, remove all existing permissions, and add new full control permissions for Everyone. Go back to the osTicket browser setup page, enter your Helpdesk name and default support email address to continue.
 </p>
 <br />
 
