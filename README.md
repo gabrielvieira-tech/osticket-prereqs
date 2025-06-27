@@ -22,11 +22,12 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- Azure account with permission to create VMs
+- Basic knowledge of Windows
+- Remote Desktop (RDP) access enabled
+- Installation files in osTicket-Installation-Files.zip
+- HTTP (port 80) and RDP (port 3389) open in the VM's firewall
+
 
 <h2>Installation Steps</h2>
 
