@@ -32,9 +32,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>1 Step</h2>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+![Step 1 Done](https://github.com/user-attachments/assets/e500b29a-4ec2-41f8-ac04-b396604c53b7)
+
 <p>
 Begin by creating a Windows 10 virtual machine in Azure with 4/2 vCPUs. Name the machine osticket-vm or whatever you wanna call it, set a username, and a password (tip: save it in a notepad). Once the VM is deployed, connect to it using Remote Desktop to begin the setup process.
 </p>
@@ -42,9 +41,9 @@ Begin by creating a Windows 10 virtual machine in Azure with 4/2 vCPUs. Name the
 
 <h2>2 Step</h2>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+![Step 2](https://github.com/user-attachments/assets/d94fcfa4-1a1d-4986-bca5-5699f48ba933)
+
+
 <p>
 Inside the VM, download <a href="https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD">the osTicket-Installation-Files.zip file</a> and extract it to the Desktop. This will create a folder called osTicket-Installation-Files, which contains all the necessary files for installing osTicket and its dependencies.
 </p>
@@ -52,9 +51,9 @@ Inside the VM, download <a href="https://drive.google.com/uc?export=download&id=
 
 <h2>3 Step</h2>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+![Step 3 Done](https://github.com/user-attachments/assets/82b0411b-8699-4958-bb6e-9c5a44260599)
+
+
 <p>
 Open the “Turn Windows features on or off” menu from the Control Panel. Enable Internet Information Services (IIS) and make sure to check CGI under World Wide Web Services > Application Development Features. This prepares the server for hosting the osTicket web application.
 </p>
@@ -62,9 +61,9 @@ Open the “Turn Windows features on or off” menu from the Control Panel. Enab
 
 <h2>4 Step</h2>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+![Step 4 Done](https://github.com/user-attachments/assets/9cad17ee-65ab-4223-af2f-ff51739b7ad7)
+
+
 <p>
 From the osTicket-Installation-Files folder, install PHP Manager for IIS and the Rewrite Module. Also install the VC++ Redistributable. Create the folder C:\PHP, then extract php-7.3.8-nts-Win32-VC15-x86.zip into it. Install MySQL 5.5.62 using the Typical Setup, then run the Configuration Wizard using Standard Configuration. Set the MySQL root username and password both to root.
 </p>
