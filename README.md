@@ -31,7 +31,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Installation Steps</h2>
 
-<h2>1 Step</h2>
+<h2> Step 1</h2>
 
 ![Step 1 Done](https://github.com/user-attachments/assets/e500b29a-4ec2-41f8-ac04-b396604c53b7)
 
@@ -40,7 +40,7 @@ Begin by creating a Windows 10 virtual machine in Azure with 4/2 vCPUs. Name the
 </p>
 <br />
 
-<h2>2 Step</h2>
+<h2> Step 2</h2>
 
 ![Step 2](https://github.com/user-attachments/assets/d94fcfa4-1a1d-4986-bca5-5699f48ba933)
 
@@ -50,7 +50,7 @@ Inside the VM, download <a href="https://drive.google.com/uc?export=download&id=
 </p>
 <br />
 
-<h2>3 Step</h2>
+<h2> Step 3</h2>
 
 ![Step 3 Done](https://github.com/user-attachments/assets/82b0411b-8699-4958-bb6e-9c5a44260599)
 
@@ -60,7 +60,7 @@ Open the “Turn Windows features on or off” menu from the Control Panel. Enab
 </p>
 <br />
 
-<h2>4 Step</h2>
+<h2> Step 4</h2>
 
 ![Step 4 Done](https://github.com/user-attachments/assets/9cad17ee-65ab-4223-af2f-ff51739b7ad7)
 
@@ -70,7 +70,7 @@ From the osTicket-Installation-Files folder, install PHP Manager for IIS and the
 </p>
 <br />
 
-<h2>5 Step</h2>
+<h2> Step 5</h2>
 
 ![Step 5 Done](https://github.com/user-attachments/assets/394e9d44-37f7-42b3-aea3-75731c20e27f)
 
@@ -80,7 +80,7 @@ Launch IIS Manager as Administrator (windows key and type IIS). In PHP Manager, 
 </p>
 <br />
 
-<h2>6 Step</h2>
+<h2> Step 6</h2>
 
 ![Step 6 Done](https://github.com/user-attachments/assets/223294d2-a21b-4ef2-b29a-bc1da967e98b)
 
@@ -90,7 +90,7 @@ Navigate to the folder C:\inetpub\wwwroot\osTicket\include and rename ost-sample
 </p>
 <br />
 
-<h2>7 Step</h2>
+<h2> Step 7</h2>
 
 ![Step 7 Done](https://github.com/user-attachments/assets/b5e7eb27-86d8-4192-82f8-13773dec0746)
 
@@ -98,7 +98,7 @@ Navigate to the folder C:\inetpub\wwwroot\osTicket\include and rename ost-sample
 <p>
 Install HeidiSQL from the installation files provided. Open HeidiSQL and create a new session using the username root and password root. Once connected, create a new database named osTicket. This database will be used by the osTicket application to store all ticket and configuration data.
 <br />
-<h2>8 Step</h2>
+<h2> Step 8</h2>
 
 ![Step 8 Done](https://github.com/user-attachments/assets/b4379b71-4838-4ce9-b791-2442ea53c4a1)
 
