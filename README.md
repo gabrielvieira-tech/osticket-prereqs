@@ -72,9 +72,9 @@ From the osTicket-Installation-Files folder, install PHP Manager for IIS and the
 
 <h2>5 Step</h2>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+![Step 5 Done](https://github.com/user-attachments/assets/394e9d44-37f7-42b3-aea3-75731c20e27f)
+
+
 <p>
 Launch IIS Manager as Administrator (windows key and type IIS). In PHP Manager, register the PHP executable located at C:\PHP\php-cgi.exe. Stop and start the IIS server to apply the changes. Extract the osTicket-v1.15.8.zip file and copy the upload folder into C:\inetpub\wwwroot, renaming it to osTicket. Restart IIS again. In IIS Manager, navigate to the Default Web Site (over the left side), select osTicket and double click PHP Manager, enable the following PHP extensions: php_imap.dll, php_intl.dll, and php_opcache.dll. Then click “Browse *:80” to open the site.
 </p>
@@ -82,9 +82,9 @@ Launch IIS Manager as Administrator (windows key and type IIS). In PHP Manager, 
 
 <h2>6 Step</h2>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+![Step 6 Done](https://github.com/user-attachments/assets/223294d2-a21b-4ef2-b29a-bc1da967e98b)
+
+
 <p>
 Navigate to the folder C:\inetpub\wwwroot\osTicket\include and rename ost-sampleconfig.php to ost-config.php. Right-click the file, go to Properties > Security, disable inheritance, remove all existing permissions, and add new full control permissions for Everyone. Go back to the osTicket browser setup page, enter with a Helpdesk name and default support email address (made up) to continue.
 </p>
@@ -92,10 +92,18 @@ Navigate to the folder C:\inetpub\wwwroot\osTicket\include and rename ost-sample
 
 <h2>7 Step</h2>
 
+![Step 7 Done](https://github.com/user-attachments/assets/b5e7eb27-86d8-4192-82f8-13773dec0746)
+
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Install HeidiSQL from the installation files. Launch HeidiSQL, create a new session using the username root and password root, and connect. Create a new database called osTicket. Return to the osTicket setup page in the browser, enter the database name osTicket, username root, and password root, then click “Install Now!” Once the installation is complete, access the admin login page at http://localhost/osTicket/scp/login.php and the end-user portal at http://localhost/osTicket/. Finally, delete the C:\inetpub\wwwroot\osTicket\setup folder and set the ost-config.php file to read-only.
-</p>
+Install HeidiSQL from the installation files provided. Open HeidiSQL and create a new session using the username root and password root. Once connected, create a new database named osTicket. This database will be used by the osTicket application to store all ticket and configuration data.
 <br />
+<h2>8 Step</h2>
+
+![Step 8 Done](https://github.com/user-attachments/assets/b4379b71-4838-4ce9-b791-2442ea53c4a1)
+
+
+<p>
+Return to the osTicket setup page in your browser. Enter the database name as osTicket, the username as root, and the password as root, then click “Install Now!” to complete the installation. Once it's done, access the admin login at http://localhost/osTicket/scp/login.php and the end-user portal at http://localhost/osTicket/. As a final step, delete the C:\inetpub\wwwroot\osTicket\setup folder and set the permissions of the ost-config.php file to read-only.
+<br />
+
